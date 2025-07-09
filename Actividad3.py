@@ -24,3 +24,7 @@ class Cliente:
                                 self.fecha = fecha
                                 self.motivo = motivo
                                 self.diagnostico = diagnostico
+
+                                class Veterinaria:
+                                    def __init__(self):
+                                        self.cliente = []
