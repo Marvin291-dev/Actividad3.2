@@ -80,3 +80,5 @@ class Cliente:
                                                                                             for mascota in cliente.mascotas:
                                                                                                 print(
                                                                                                     f"{mascota.nombre} - {mascota.especie}, {mascota.raza}, {mascota.edad} años")
+
+                                                                                                veterinaria = veterinaria()
