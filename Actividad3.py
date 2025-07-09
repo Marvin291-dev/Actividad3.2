@@ -107,3 +107,11 @@ class Cliente:
                                                                                                         raza = input("Raza: ")
                                                                                                         edad = input("Edad: ")
                                                                                                         veterinaria.registrarMascota(self, nombre_Cliente, nombre_Mascota, Especie, Raza, edad)
+
+                                                                                                    elif opcion == "3":
+                                                                                                        nombre_Cliente = input("Nombre del cliente: ")
+                                                                                                        nombre_Mascota = input("Nombre del mascota: ")
+                                                                                                        fecha = input("Fecha de la cita (DD/MM/AAAA): ")
+                                                                                                        motivo = input("Motivo de la consulta: ")
+                                                                                                        diagnostico = input("Diagnostico: ")
+                                                                                                        veterinaria.agendar_cita(self, nombre_Cliente, nombre_Mascota, fecha, motivo, diagnostico)
