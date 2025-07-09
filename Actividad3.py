@@ -18,3 +18,9 @@ class Cliente:
 
                     def agregar_Citas(self, citas):
                         self.historial.append(citas)
+
+                        class CitaMedica:
+                            def __init__(self, fecha, motivo, diagnostico):
+                                self.fecha = fecha
+                                self.motivo = motivo
+                                self.diagnostico = diagnostico
