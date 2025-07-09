@@ -28,3 +28,9 @@ class Cliente:
                                 class Veterinaria:
                                     def __init__(self):
                                         self.cliente = []
+
+                                        def registrar_Cliente(self, nombre, telefono, correo):
+                                            cliente = Cliente(nombre, telefono, correo)
+                                            self.cliente.append(cliente)
+                                            print("Cliente registrado exitosamente")
+
