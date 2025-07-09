@@ -123,3 +123,10 @@ class Cliente:
 
                                                                                                     elif opcion == "5":
                                                                                                         veterinaria.ver_ClientesYMascota()
+
+                                                                                                    elif opcion == "6":
+                                                                                                        print("Gracias por usar el sistema veterinaria")
+                                                                                                        break
+
+                                                                                                    else:
+                                                                                                        print("Opcion no valida intente de nuevo")
