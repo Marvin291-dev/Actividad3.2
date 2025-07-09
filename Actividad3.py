@@ -34,3 +34,8 @@ class Cliente:
                                             self.cliente.append(cliente)
                                             print("Cliente registrado exitosamente")
 
+                                            def BuscarCliente(self, nombre):
+                                                for cliente in self.cliente:
+                                                    if cliente.nombre.lower() == nombre.lower():
+                                                        return cliente
+                                                    return None
