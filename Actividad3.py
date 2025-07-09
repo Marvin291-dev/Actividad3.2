@@ -16,3 +16,5 @@ class Cliente:
                     self.edad = edad
                     self.hisotial = []
 
+                    def agregar_Citas(self, citas):
+                        self.historial.append(citas)
