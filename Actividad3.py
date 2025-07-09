@@ -115,3 +115,8 @@ class Cliente:
                                                                                                         motivo = input("Motivo de la consulta: ")
                                                                                                         diagnostico = input("Diagnostico: ")
                                                                                                         veterinaria.agendar_cita(self, nombre_Cliente, nombre_Mascota, fecha, motivo, diagnostico)
+
+                                                                                                    elif opcion == "4":
+                                                                                                        nombre_Cliente = input("Nombre del cliente: ")
+                                                                                                        nombre_Mascota = input("Nombre del mascota: ")
+                                                                                                        veterinaria.Mostrar_Historial(self, nombre_Cliente, nombre_Mascota)
