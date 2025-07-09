@@ -120,3 +120,6 @@ class Cliente:
                                                                                                         nombre_Cliente = input("Nombre del cliente: ")
                                                                                                         nombre_Mascota = input("Nombre del mascota: ")
                                                                                                         veterinaria.Mostrar_Historial(self, nombre_Cliente, nombre_Mascota)
+
+                                                                                                    elif opcion == "5":
+                                                                                                        veterinaria.ver_ClientesYMascota()
