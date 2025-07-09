@@ -82,3 +82,12 @@ class Cliente:
                                                                                                     f"{mascota.nombre} - {mascota.especie}, {mascota.raza}, {mascota.edad} años")
 
                                                                                                 veterinaria = veterinaria()
+
+                                                                                                while True:
+                                                                                                    print("Bienvenido a la veterinaria")
+                                                                                                    print("1. Registrar nuevo Cliente")
+                                                                                                    print("2. Registrar nuevo Mascota")
+                                                                                                    print("3. Agendar cita medica")
+                                                                                                    print("4. Ver el historial de citas")
+                                                                                                    print("5. Ver clientes y mascotas")
+                                                                                                    print("6. Salir")
