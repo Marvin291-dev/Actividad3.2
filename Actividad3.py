@@ -91,3 +91,11 @@ class Cliente:
                                                                                                     print("4. Ver el historial de citas")
                                                                                                     print("5. Ver clientes y mascotas")
                                                                                                     print("6. Salir")
+
+                                                                                                    opcion = input("Seleccione una opcion: ")
+
+                                                                                                    if opcion == "1":
+                                                                                                        nombre = input("Nombre del cliente: ")
+                                                                                                        telefono = input("Telefono del cliente: ")
+                                                                                                        correo = input("Correo del cliente: ")
+                                                                                                        Veterinaria.registrar_cliente(nombre, telefono, correo)
