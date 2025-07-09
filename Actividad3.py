@@ -39,3 +39,12 @@ class Cliente:
                                                     if cliente.nombre.lower() == nombre.lower():
                                                         return cliente
                                                     return None
+
+                                                def registrarMascota(self, nombre_Cliente, nombre_Mascota, Especie, Raza, edad):
+                                                    cliente = self.BuscarCliente(nombre_Cliente)
+                                                    if cliente:
+                                                        mascota = Mascota(nombre_Mascota, Especie, Raza, edad)
+                                                        Cliente.agregar_mascota(mascota)
+                                                        print("Mascota registrada exitosamente")
+                                                    else:
+                                                        print("Cliente no encontrado")
