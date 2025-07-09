@@ -99,3 +99,11 @@ class Cliente:
                                                                                                         telefono = input("Telefono del cliente: ")
                                                                                                         correo = input("Correo del cliente: ")
                                                                                                         Veterinaria.registrar_cliente(nombre, telefono, correo)
+
+                                                                                                    elif opcion == "2":
+                                                                                                        nombre_Cliente = input("Nombre del cliente: ")
+                                                                                                        nombre_Mascota = input("Nombre del mascota: ")
+                                                                                                        especie = input("Especie: ")
+                                                                                                        raza = input("Raza: ")
+                                                                                                        edad = input("Edad: ")
+                                                                                                        veterinaria.registrarMascota(self, nombre_Cliente, nombre_Mascota, Especie, Raza, edad)
