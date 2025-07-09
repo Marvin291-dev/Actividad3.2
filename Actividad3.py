@@ -48,3 +48,16 @@ class Cliente:
                                                         print("Mascota registrada exitosamente")
                                                     else:
                                                         print("Cliente no encontrado")
+
+                                                        def agendar_cita(self, nombre_Cliente, nombre_Mascota, fecha, motivo, diagnostico):
+                                                            cliente = self.BuscarCliente(nombre_Cliente)
+                                                            if cliente:
+                                                                for mascota in cliente.mascotas:
+                                                                    if mascota.nombre.lower() == nombre_Mascota.lower():
+                                                                        citas = CitaMedica(fecha, motivo, diagnostico)
+                                                                        mascota.agregar_Citas(citas)
+                                                                        print("Cita medica registrada exitosamente")
+                                                                        return
+                                                                    print("Mascota no encontrada")
+                                                                else:
+                                                                    print("Cliente no encontrado")
