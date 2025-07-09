@@ -61,3 +61,15 @@ class Cliente:
                                                                     print("Mascota no encontrada")
                                                                 else:
                                                                     print("Cliente no encontrado")
+
+                                                            def Mostrar_Historial(self, nombre_Cliente, nombre_Mascota):
+                                                                cliente = self.BuscarCliente(nombre_Cliente)
+                                                                if cliente:
+                                                                    for mascota in cliente.mascotas:
+                                                                        if mascota.nombre.lower() == nombre_Mascota.lower():
+                                                                            if mascota.historial:
+                                                                                print(f"Historial medico de mascota {mascota.nombre}")
+                                                                                for citas in mascota.historial:
+                                                                                    print(f"-{cita.fecha}: {cita.motivo} → {cita.diagnostico}")
+                                                                                else:
+                                                                                    print("No hay citas registradas.")
