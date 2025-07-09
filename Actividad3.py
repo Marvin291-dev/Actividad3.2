@@ -73,3 +73,10 @@ class Cliente:
                                                                                     print(f"-{cita.fecha}: {cita.motivo} → {cita.diagnostico}")
                                                                                 else:
                                                                                     print("No hay citas registradas.")
+
+                                                                                    def ver_ClientesYMascota(self):
+                                                                                        for cliente in self.cliente:
+                                                                                            print(f"{cliente.nombre} ({cliente.telefono}) {cliente.correo})")
+                                                                                            for mascota in cliente.mascotas:
+                                                                                                print(
+                                                                                                    f"{mascota.nombre} - {mascota.especie}, {mascota.raza}, {mascota.edad} años")
